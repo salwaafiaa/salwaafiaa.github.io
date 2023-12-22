@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="../assets/css/movie.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="../" class="title">Studio Ghibli<span style="color: rgb(255, 118, 140);">.</span></a></li>
+            <li><a href="../about/" >About me</a></li>
+            <li><a href="#" style="color: rgb(248, 131, 151); background-color: rgb(240, 240, 240);">Movie</a></li>
+            <li><a href="../review/">Review</a></li>
+            <li><a href="../history">History</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div>
+            <a href="../" style="float: left; font-weight: bold;">Studio Ghibli<span style="color: rgb(255, 118, 140);">.</span></a>
+            <a href="../history" class="nav-menu" id="nav-item">History</a>
+            <a href="../review" class="nav-menu" id="nav-item">Review</a>
+            <a href="#" class="nav-menu" id="nav-item" style="color: rgb(248, 131, 151);">Movie</a>
+            <a href="../about" class="nav-menu" id="nav-item">About me</a>
+            <i class="fa-solid fa-bars" onclick="menu()" style="float: right;" id="btn-menu"></i>
+        </div>
+    </nav>
+    <header>
+        <img src="../assets/images/banner2.jpg" alt="Header Banner">
+        <div>
+            <h1>Grave Of The Fireflies<span style="color: rgb(255, 118, 140);">.</span></h1>
+            <p>
+                Japan, World War 2. Teenage boy Seita and his young sister Setsuko are left homeless when their city is firebombed by US bombers. They end up living with an aunt. Initially things go well and life seems almost normal again. However, their relationship with their aunt deteriorates and Seita and Setsuko decide to leave and fend for themselves. They find a place and things seem to be going well. However, over time food gets scarcer and life becomes a constant struggle for survival.
+            </p>
+            <div class="wrapper">
+                <div><i class="fa-solid fa-clock"></i> 1hr 29m</div>
+                <div><i class="fa-solid fa-star"></i> 4,5 Stars</div>
+                <div><i class="fa-solid fa-eye"></i> 15K</div>
+                <div><i class="fa-solid fa-ranking-star"></i> Top 1</div>
+            </div>
+            <div class="button">
+                <a href="https://youtu.be/4vPeTSRd580?si=2TLFv3Xbc-2hJrC6"><i class="fa-solid fa-play"></i> Play</a>
+                <a href="#more">More <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="body">
+        <span id="more">
+            <h2>Our <span style="color: rgb(255, 118, 140);">Movies</span></h2>
+        </span>
+        <div class="wrapper">
+            <div class="card">
+                <img src="../assets/images/castle in the sky.jpg" width="100%">
+                <div class="card-body">
+                    <b>Castle In The Sky</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/8ykEy-yPBFc?si=Cz55e2HU4gqfXOAF"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 2hr 4m</div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/kiki.jpg" width="100%">
+                <div class="card-body">
+                    <b>Kiki's Delivery Service</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/4bG17OYs-GA?si=9IPzgADnNkHLh4uG"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 1hr 42m</div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/howls.jpg" width="100%">
+                <div class="card-body">
+                    <b>Howl's Moving Castle</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/iwROgK94zcM?si=c4sHdaRde8GZ8z14"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 1hr 59m</div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/spirited.jpg" width="100%">
+                <div class="card-body">
+                    <b>Spirited Away</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/ByXuk9QqQkk?si=_g6MfKcE_sJJy_am"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 2hr 5m</div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/totoro.jpg" width="100%">
+                <div class="card-body">
+                    <b>My Neighbor Totoro</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/92a7Hj0ijLs?si=liQ5vCdn_Fd11NU8"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 1hr 26m</div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/fireflies.jpg" width="100%">
+                <div class="card-body">
+                    <b>Grave Of The Fireflies</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/4vPeTSRd580?si=2TLFv3Xbc-2hJrC6"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 1hr 29m</div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/poppy.jpg" width="100%">
+                <div class="card-body">
+                    <b>From Up On Puppy Hill</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/9nzpk_Br6yo?si=yoEMvmBcj31Dleym"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 1hr 31m</div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/porco.jpg" width="100%">
+                <div class="card-body">
+                    <b>Porco Rosso</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/awEC-aLDzjs?si=Na8iSXE6lltDxbwo"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 1hr 42m</div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/ocean.jpg" width="100%">
+                <div class="card-body">
+                    <b>Ocean Waves</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/tfkHiHjrqa8?si=lDaVRfzP7LT-6Lu0"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 1hr 12m</div>
+            </div>
+            <div class="card">
+                <img src="../assets/images/wind.jpg" width="100%">
+                <div class="card-body">
+                    <b>The Wind Rises</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/PhHoCnRg1Yw?si=JajT91dmLMT_MeMP"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 2hr 6m</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>Reference</h2>
+        <div class="container">
+            <div>
+                <p>
+                    Identifikasi Umum: <a href="https://www.britannica.com/place/Tokyo">britannica.com</a>, <a href="https://editorial.rottentomatoes.com/guide/all-studio-ghibli-movies-ranked-by-tomatometer/">rottentomatoes.com</a>, <a href="https://www.imdb.com/list/ls076439519/">imdb.com</a>
+                    <br>
+                    Images: <a href="https://www.imdb.com/list/ls076439519/">imdb.com</a>, <a href="https://wallpapercave.com/grave-of-the-fireflies-uhd-wallpapers">wallpapercave.com</a>
+                </p>
+            </div>
+            <div class="grid">
+                <div>
+                    <img src="../assets/images/me2.jpeg" width="100%">
+                </div>
+                <div>
+                    <h3>Siti Salwa Nafi'ah, 2023</h3>
+                    Gue tuh kayak kopi hitam yang strong, tapi juga creamy. Suka banget jalan-jalan sambil dengerin musik, kalo lagi galau mungkin bakal dengerin lagu-lagu indie yang deep. Gue paling enjoy kalo lagi di atas jalan sendiri, meresapi angin sepoi-sepoi. Kalo lagi gak ada kerjaan, suka banget nonton film yang bikin perut sampe kram. Jadi, kalo lo cari temen ngobrol yang asik, yang bisa diajak seru-seruan, gue siap jadi partner in crime! 🚀
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="background-color: black; text-align: center; padding: 5px 0; color: rgb(133, 133, 133);">
+        &copy; Siti Salwa 2023-2024
+    </div>
+    <script src="../assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e42e6d5e29.js" crossorigin="anonymous"></script>
+</body>
+</html>

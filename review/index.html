@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="../assets/css/review.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="../" class="title">Studio Ghibli<span style="color: rgb(255, 118, 140);">.</span></a></li>
+            <li><a href="../about/" >About me</a></li>
+            <li><a href="../movie">Movie</a></li>
+            <li><a href="#" style="color: rgb(248, 131, 151); background-color: rgb(240, 240, 240);">Review</a></li>
+            <li><a href="../history">History</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div>
+            <a href="../" style="float: left; font-weight: bold;">Studio Ghibli<span style="color: rgb(255, 118, 140);">.</span></a>
+            <a href="../history" class="nav-menu" id="nav-item">History</a>
+            <a href="#" class="nav-menu" id="nav-item" style="color: rgb(248, 131, 151);">Review</a>
+            <a href="../movie" class="nav-menu" id="nav-item">Movie</a>
+            <a href="../about/" class="nav-menu" id="nav-item" >About me</a>
+            <i class="fa-solid fa-bars" onclick="menu()" style="float: right;" id="btn-menu"></i>
+        </div>
+    </nav>
+    <div class="body">
+        <div class="wrapper">
+            <div class="img">
+                <img src="../assets/images/castle in the sky.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h2>Castle In The Sky</h2>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <br><br>
+                <p><b>Critics Consensus: </b>With a storytelling palette as rich and brilliant as its animation, Castle in the Sky thrillingly encapsulates Studio Ghibli's unique strengths.</p>
+            </div>
+            <div class="img">
+                <img src="../assets/images/kiki.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h2>Kiki's Delivery Service</h2>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <br><br>
+                <p><b>Critics Consensus: </b>Kiki's Delivery Service is a heartwarming, gorgeously-rendered tale of a young witch discovering her place in the world.</p>
+            </div>
+            <div class="img">
+                <img src="../assets/images/howls.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h2>Howl's Moving Castle</h2>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <br><br>
+                <p><b>Critics Consensus: </b>Exquisitely illustrated by master animator Miyazaki, Howl's Moving Castle will delight children with its fantastical story and touch the hearts and minds of older viewers as well.</p>
+            </div>
+            <div class="img">
+                <img src="../assets/images/spirited.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h2>Spirited Away</h2>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <br><br>
+                <p><b>Critics Consensus: </b>Spirited Away is a dazzling, enchanting, and gorgeously drawn fairy tale that will leave viewers a little more curious and fascinated by the world around them.</p>
+            </div>
+            <div class="img">
+                <img src="../assets/images/totoro.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h2>My Neighbor Totoro</h2>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <br><br>
+                <p><b>Critics Consensus: </b>My Neighbor Totoro is a heartwarming, sentimental masterpiece that captures the simple grace of childhood.</p>
+            </div>
+            <div class="img">
+                <img src="../assets/images/fireflies.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h2>Grave of the Fireflies</h2>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <br><br>
+                <p><b>Critics Consensus: </b>An achingly sad anti-war film, Grave of the Fireflies is one of Studio Ghibli's most profoundly beautiful, haunting works.</p>
+            </div>
+            <div class="img">
+                <img src="../assets/images/poppy.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h2>Form Up on Poppy Hill</h2>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <br><br>
+                <p><b>Critics Consensus: </b>Gentle and nostalgic, From Up on Poppy Hill is one of Studio Ghibli's sweeter efforts -- and if it doesn't push the boundaries of the genre, it remains as engagingly lovely as Ghibli fans have come to expect.</p>
+            </div>
+            <div class="img">
+                <img src="../assets/images/porco.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h2>Porco Rosso</h2>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <br><br>
+                <p><b>Critics Consensus: </b>No consensus yet.</p>
+            </div>
+            <div class="img">
+                <img src="../assets/images/ocean.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h2>Ocean Waves</h2>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <br><br>
+                <p><b>Critics Consensus: </b>No consensus yet.</p>
+            </div>
+            <div class="img">
+                <img src="../assets/images/wind.jpg" alt="">
+            </div>
+            <div class="desc">
+                <h2>The Wind Rises</h2>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="solid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <i class="fa-solid fa-star" id="notsolid"></i>
+                <br><br>
+                <p><b>Critics Consensus: </b>The Wind Rises is a fittingly bittersweet swan song for director Hayao Miyazaki.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>Reference</h2>
+        <div class="container">
+            <div>
+                <p>
+                    Identifikasi Umum: <a href="https://editorial.rottentomatoes.com/guide/all-studio-ghibli-movies-ranked-by-tomatometer/">rottentomatoes.com</a>
+                    <br>
+                </p>
+            </div>
+            <div class="grid">
+                <div>
+                    <img src="../assets/images/me2.jpeg" width="100%">
+                </div>
+                <div>
+                    <h3>Siti Salwa Nafi'ah, 2023</h3>
+                    Gue tuh kayak kopi hitam yang strong, tapi juga creamy. Suka banget jalan-jalan sambil dengerin musik, kalo lagi galau mungkin bakal dengerin lagu-lagu indie yang deep. Gue paling enjoy kalo lagi di atas jalan sendiri, meresapi angin sepoi-sepoi. Kalo lagi gak ada kerjaan, suka banget nonton film yang bikin perut sampe kram. Jadi, kalo lo cari temen ngobrol yang asik, yang bisa diajak seru-seruan, gue siap jadi partner in crime! 🚀
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="background-color: black; text-align: center; padding: 5px 0; color: rgb(133, 133, 133);">
+        &copy; Siti Salwa 2023-2024
+    </div>
+    <script src="../assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e42e6d5e29.js" crossorigin="anonymous"></script>
+</body>
+</html>

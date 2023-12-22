@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli Animation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#" class="title">Studio Ghibli<span style="color: rgb(255, 118, 140);">.</span></a></li>
+            <li><a href="about" >About me</a></li>
+            <li><a href="movie">Movie</a></li>
+            <li><a href="review">Review</a></li>
+            <li><a href="history">History</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div>
+            <a href="#" style="float: left; font-weight: bold;">Studio Ghibli<span style="color: rgb(255, 118, 140);">.</span> </a>
+            <a href="history" class="nav-menu" id="nav-item">History</a>
+            <a href="review" class="nav-menu" id="nav-item">Review</a>
+            <a href="movie" class="nav-menu" id="nav-item">Movie</a>
+            <a href="about" class="nav-menu" id="nav-item">About me</a>
+            <i class="fa-solid fa-bars" onclick="menu()" style="float: right;" id="btn-menu"></i>
+        </div>
+    </nav>
+    <header>
+        <div class="wrapper">
+            <div>
+                <h1>Ghibli Animation<span style="color: rgb(255, 118, 140); font-weight: bold; font-size: 2rem;">.</span> </h1>
+                <span>Arts and Culture</span>
+                <p>
+                    Studio Ghibli, studio film animasi terkenal dari Jepang yang didirikan pada tahun 1985 oleh animator dan sutradara Miyazaki Hayao dan Takahata Isao serta produser Suzuki Toshio. Studio Ghibli dikenal dengan kualitas pembuatan filmnya yang tinggi dan keseniannya. Film-filmnya mendapat pujian baik dari kritikus maupun populer dan mempengaruhi studio animasi lainnya. Kantor pusatnya berada di Tokyo.
+                </p>
+            </div>
+        </div>
+        <img src="assets/images/header.jpg" alt="Header Banner" width="100%">
+    </header>
+    <div class="body">
+        <span>
+            <h2>About <span style="color: rgb(255, 118, 140);">Me</span></h2>
+        </span>
+        <div class="about">
+            <div>
+                <img src="assets/images/me.jpeg" width="100%">
+                <i class="fa-solid fa-heart" style="position: absolute; top: 0px; left: 0px; font-size: 20px; color: rgb(230, 49, 79);"></i>
+            </div>
+            <div class="text">
+                <p>
+                    <b>HAI!</b> <br>
+                    Halo! Aku Siti Salwa Nafi'ah, alias Salwa, loh! Aku itu sukaak banget sama musik, apalagi kalo nyanyi. Jadi, kalo lagi senggang, biasanya aku suka main piano online, seru banget sih! Aku nge fans banget suka dengerin lagu Maudy Ayunda, dia tuh bener-bener jadi inspirasi aku banget. Maudy selalu bawa kesan positive vibes, dan setiap kali dengerin lagunya, aku jadi semangat dan kaya diingetin buat terus menjadi perempuan yang independent. Itu yang aku suka dari dia, bikin aku ngerasa bisa jadi versi terbaik dari diri sendiri. Motivasi aku sebenernya simpel aja, pengen jadi orang yang bermanfaat buat semua orang, dan tentunya selalu nyebarin kebaikan di sekitar. Pokoknya, hidup ini harus asik dan penuh positif vibes, kan? Keep spreading the good vibes, guys! ✌️😄
+                </p>
+            </div>
+        </div>
+        <span>
+            <h2>Recommended <span style="color: rgb(255, 118, 140);">Movies</span></h2>
+        </span>
+        <div class="wrapper">
+            <div class="card">
+                <img src="assets/images/fireflies.jpg" width="100%">
+                <div class="card-body">
+                    <b>Grave Of The Fireflies</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/4vPeTSRd580?si=2TLFv3Xbc-2hJrC6"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 1hr 29m</div>
+            </div>
+            <div class="card">
+                <img src="assets/images/spirited.jpg" width="100%">
+                <div class="card-body">
+                    <b>Spirited Away</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/ByXuk9QqQkk?si=_g6MfKcE_sJJy_am"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 2hr 5m</div>
+            </div>
+            <div class="card">
+                <img src="assets/images/castle in the sky.jpg" width="100%">
+                <div class="card-body">
+                    <b>Castle In The Sky</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/8ykEy-yPBFc?si=Cz55e2HU4gqfXOAF"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 2hr 4m</div>
+            </div>
+            <div class="card">
+                <img src="assets/images/totoro.jpg" width="100%">
+                <div class="card-body">
+                    <b>My Neighbor Totoro</b>
+                    <br>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="solid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <i class="fa-solid fa-star" id="notsolid"></i>
+                    <br><br>
+                    <a href="https://youtu.be/92a7Hj0ijLs?si=liQ5vCdn_Fd11NU8"><i class="fa-solid fa-play"></i> Play</a>
+                </div>
+                <div class="label"><i class="fa-solid fa-clock"></i> 1hr 26m</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>Reference</h2>
+        <div class="container">
+            <div>
+                <p>
+                    Identifikasi Umum: <a href="https://www.britannica.com/place/Tokyo">britannica.com</a>, <a href="https://editorial.rottentomatoes.com/guide/all-studio-ghibli-movies-ranked-by-tomatometer/">rottentomatoes.com</a>, <a href="https://www.imdb.com/list/ls076439519/">imdb.com</a>
+                    <br>
+                    Images: <a href="https://www.imdb.com/list/ls076439519/">imdb.com</a>
+                </p>
+            </div>
+            <div class="grid">
+                <div>
+                    <img src="assets/images/me2.jpeg" width="100%">
+                </div>
+                <div>
+                    <h3>Siti Salwa Nafi'ah, 2023</h3>
+                    Gue tuh kayak kopi hitam yang strong, tapi juga creamy. Suka banget jalan-jalan sambil dengerin musik, kalo lagi galau mungkin bakal dengerin lagu-lagu indie yang deep. Gue paling enjoy kalo lagi di atas jalan sendiri, meresapi angin sepoi-sepoi. Kalo lagi gak ada kerjaan, suka banget nonton film yang bikin perut sampe kram. Jadi, kalo lo cari temen ngobrol yang asik, yang bisa diajak seru-seruan, gue siap jadi partner in crime! 🚀
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="background-color: black; text-align: center; padding: 5px 0; color: rgb(133, 133, 133);">
+        &copy; Siti Salwa 2023-2024
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e42e6d5e29.js" crossorigin="anonymous"></script>
+</body>
+</html>
