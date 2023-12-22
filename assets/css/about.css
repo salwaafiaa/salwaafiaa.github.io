@@ -1,0 +1,451 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    color: rgb(51, 51, 51);
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+a{
+    text-decoration: none;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Sidebar */
+.sidebar{
+    box-shadow: 1px 1px 8px rgb(207, 207, 207);
+    position: fixed;
+    height: 100%;
+    width: 60%;
+    float: left;
+    background-color: white;
+    z-index: 10;
+    top: 0;
+    padding: 0;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a{
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    color: rgb(51, 51, 51);
+}
+
+.sidebar ul li a.title{
+    font-weight: bold;
+    padding: 25px 15px;
+    font-size: 23px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.sidebar ul li a.title:hover{
+    background-color: white;
+    color: rgb(51, 51, 51);
+}
+
+.sidebar ul li a:hover{
+    background-color: rgb(240, 240, 240);
+    color: rgb(255, 106, 131);
+}
+
+/* Navbar */
+nav{
+    background-color: white;
+    position: relative;
+    display: flex;
+    box-shadow: 1px 1px 3px rgb(167, 167, 167);
+    z-index: 3;
+}
+
+nav div{
+    width: 100%;
+    padding: 0 5px;
+}
+
+nav a, i{
+    font-size: 23px;
+    color: rgb(51, 51, 51);
+    padding: 14px 16px;
+}
+
+nav a.nav-menu{
+    float: right;
+}
+
+#nav-item{
+    display: none;
+}
+
+#btn-menu{
+    cursor: pointer;
+}
+
+nav a.nav-menu:hover{
+    color: rgb(255, 106, 131);
+}
+
+/* Header */
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    height: 93vh;
+}
+
+header div{
+    margin: 0 1rem;;
+}
+
+header div h1{
+    color: white;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -1px;
+}
+
+header div h1 span{
+    color: rgb(255, 106, 131);
+}
+
+header div p{
+    font-size: 16px;
+    color: white;
+}
+
+header div .header-btn{
+    margin: 2rem 0;
+}
+
+header div .header-btn a{
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 8px 20px;
+    color: black;
+}
+
+/* body */
+
+span h2{
+    margin-top: 2rem;
+}
+
+.about{
+    background-color: white;
+    grid-template-columns: auto;
+    margin: 1rem 0 2rem 0;
+    padding: 1rem 1rem;
+}
+
+.about .text p{
+    font-size: 16px;
+}
+
+.about .text p b{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.about img{
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.about .text .wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about .text .wrapper .card{
+    box-shadow: 0px 1px 3px rgb(153, 153, 153);
+    position: relative;
+    padding: 40px 10px 10px 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.about .text .wrapper .card .icon{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -26px;
+    width: 98%;
+}
+
+.about .text .wrapper .card .icon i{
+    border-radius: 50%;
+    padding: 15px;
+    background-color: rgb(255, 106, 131);
+    color: rgb(51, 51, 51);
+}
+
+.about .text .wrapper .card .icon img{
+    border-radius: 50%;
+    width: 55px;
+}
+
+.quote{
+    font-size: 1rem;
+    background-color: white;
+    padding: 5rem 3rem;
+    font-style: italic;
+}
+
+.quote p, .name, hr{
+    color: rgb(122, 122, 122);
+}
+
+.name{
+    display: flex;
+    align-items: center;
+}
+
+.name hr{
+    width: 6%;
+    margin: 0 10px 0 0;
+}
+
+/* Footer */
+footer{
+    margin-top: 2rem;
+    background-color: rgb(255, 217, 223);
+    color: black;
+    padding: 2rem 1rem;
+}
+
+footer .container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 3rem;
+}
+
+footer div p a{
+    text-decoration: underline;
+}
+
+footer .container .grid{
+    display: grid;
+    grid-template-columns: 10% auto;
+    column-gap: 15px;
+}
+
+footer .container .grid div img {
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 600px){
+    #btn-menu{
+        display: none;
+    }
+    
+    #nav-item{
+        display: block;
+    }
+    
+    .sidebar{
+        display: none;
+    }
+
+    /* Navbar */
+    nav{
+        background-color: white;
+        position: relative;
+        display: flex;
+        box-shadow: 1px 1px 3px rgb(167, 167, 167);
+        z-index: 3;
+    }
+    
+    nav div{
+        width: 100%;
+        padding: 0 2rem;
+    }
+    
+    nav a{
+        font-size: 18px;
+        color: rgb(51, 51, 51);
+        padding: 14px 16px;
+    }
+    
+    nav a.nav-menu{
+        float: right;
+    }
+    
+    nav a.nav-menu:hover{
+        color: rgb(255, 106, 131);
+    }
+
+    /* Header */
+    header{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        width: 100%;
+        height: 93vh;
+    }
+
+    header div{
+        margin: 0 5rem;;
+    }
+
+    header div h1{
+        color: white;
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: -1px;
+    }
+
+    header div h1 span{
+        color: rgb(255, 106, 131);
+    }
+
+    header div p{
+        font-size: 20px;
+        color: white;
+    }
+
+    header div .header-btn{
+        margin: 2rem 0;
+    }
+
+    header div .header-btn a{
+        border-radius: 3px;
+        padding: 8px 20px;
+        color: black;
+    }
+
+    /* Body */
+
+    .about{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto;
+        column-gap: 1rem;
+        margin: 1rem 0 2rem 0;
+        padding: 2rem 4rem;
+    }
+    
+    .about div{
+        margin-right: 1.5rem;
+    }
+    
+    .about .text p{
+        font-size: 16px;
+    }
+    
+    .about .text p b{
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+    
+    .about img{
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .about .text .wrapper{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 2rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+
+    .about .text .wrapper .card{
+        box-shadow: 0px 1px 3px rgb(153, 153, 153);
+        position: relative;
+        padding: 40px 10px 10px 10px;
+        border-radius: 4px;
+    }
+
+    .about .text .wrapper .card .icon{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: -26px;
+    }
+
+    .about .text .wrapper .card .icon i{
+        border-radius: 50%;
+        padding: 15px;
+        background-color: rgb(255, 106, 131);
+        color: rgb(51, 51, 51);
+    }
+
+    .about .text .wrapper .card .icon img{
+        border-radius: 50%;
+        width: 12%;
+    }
+
+    .quote{
+        font-size: 2rem;
+        background-color: white;
+        padding: 5rem 3rem;
+        font-style: italic;
+    }
+
+    .quote p, .name, hr{
+        color: rgb(122, 122, 122);
+    }
+
+    .name{
+        display: flex;
+        align-items: center;
+    }
+
+    .name hr{
+        width: 6%;
+        margin: 0 20px 0 0;
+    }
+
+    /* footer */
+    footer{
+        margin-top: 2rem;
+        background-color: rgb(255, 217, 223);
+        color: black;
+        padding: 2rem 4rem;
+    }
+
+    footer .container{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    footer div p a{
+        text-decoration: underline;
+    }
+
+    footer .container .grid{
+        display: grid;
+        grid-template-columns: 10% auto;
+        column-gap: 15px;
+    }
+
+    footer .container .grid div img {
+        border-radius: 50%;
+    }
+
+}

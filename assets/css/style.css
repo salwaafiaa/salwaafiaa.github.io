@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+a{
+    text-decoration: none;
+}
+
+#solid{
+    color: gold;
+}
+
+#notsolid{
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Sidebar */
+.sidebar{
+    box-shadow: 1px 1px 8px rgb(207, 207, 207);
+    position: fixed;
+    height: 100%;
+    width: 60%;
+    float: left;
+    background-color: white;
+    top: 0;
+    z-index: 10;
+    padding: 0;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a{
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    color: rgb(51, 51, 51);
+}
+
+.sidebar ul li a.title{
+    font-weight: bold;
+    padding: 25px 15px;
+    font-size: 23px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.sidebar ul li a.title:hover{
+    background-color: white;
+    color: rgb(51, 51, 51);
+}
+
+.sidebar ul li a:hover{
+    background-color: rgb(240, 240, 240);
+    color: rgb(255, 106, 131);
+}
+
+/* Navbar */
+nav{
+    background-color: white;
+    position: relative;
+    display: flex;
+    box-shadow: 1px 1px 3px rgb(167, 167, 167);
+    z-index: 3;
+}
+
+nav div{
+    width: 100%;
+    padding: 0 5px;
+}
+
+nav a, i{
+    font-size: 23px;
+    color: rgb(51, 51, 51);
+    padding: 14px 16px;
+}
+
+nav a.nav-menu{
+    float: right;
+}
+
+#nav-item{
+    display: none;
+}
+
+#btn-menu{
+    cursor: pointer;
+}
+
+nav a.nav-menu:hover{
+    color: rgb(255, 106, 131);
+}
+
+/* Header */
+header{
+    position: relative;
+    height: 100vh;
+    top: -3.1rem;
+    margin-bottom: -3rem;
+}
+
+header .wrapper{
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    top: -3.1rem;
+    padding-left: 1rem;
+}
+
+header .wrapper div{
+    width: 85%;
+    color: white;
+}
+
+header .wrapper div h1{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+header .wrapper div span{
+    font-size: 20px;
+}
+
+header .wrapper div p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+header img{
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* body */
+
+.body{
+    color: rgb(51, 51, 51);
+    position: relative;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.body span{
+    text-align: center;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    margin: 1rem 0 2rem 0;
+    background-color: white;
+    padding: 2rem 1rem;
+}
+
+.about div{
+    position: relative;
+    width: 100%;
+}
+
+.about .text p{
+    font-size: 14px;
+}
+
+.about .text p b{
+    font-size: 2rem;
+}
+
+.body .wrapper{
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: white;
+}
+
+.body .wrapper .card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.body .wrapper .card img{
+    height: 100%;
+    object-fit: fill;
+}
+
+.body .wrapper .card .card-body{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    padding: 10px 10px 20px 10px;
+}
+
+.body .wrapper .card .label{
+    position: absolute;
+    top: 5px;
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+    font-size: 14px;
+}
+
+.body .wrapper .card .label i{
+    padding: 0;
+    color: rgb(116, 116, 116);
+    font-size: 14px;
+}
+
+.body .wrapper .card .card-body i, .body .wrapper .card .card-body a{
+    color: white;
+    font-size: 14px;
+    padding: 0;
+}
+
+.body .wrapper .card .card-body a{
+    padding: 7px 10px;
+    background-color: rgb(255, 106, 131);
+    border-radius: 3px;
+}
+footer{
+    margin-top: 2rem;
+    background-color: rgb(255, 217, 223);
+    color: black;
+    padding: 2rem 1rem;
+}
+
+footer .container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 3rem;
+}
+
+footer div p a{
+    text-decoration: underline;
+    color: black;
+}
+
+footer .container .grid{
+    display: grid;
+    grid-template-columns: 10% auto;
+    column-gap: 15px;
+}
+
+footer .container .grid div img {
+    border-radius: 50%;
+}
+@media only screen and (min-width: 600px){
+
+.sidebar{
+    display: none;
+}
+
+/* Navbar */
+#nav-item{
+    display: block;
+}
+
+#btn-menu{
+    display: none;
+}
+
+nav div{
+    width: 100%;
+    padding: 0 2rem;
+}
+
+nav a{
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    padding: 14px 16px;
+}
+
+
+/* Header */
+header{
+    position: relative;
+    height: 100vh;
+    top: 0;
+    margin-bottom: -6rem;
+}
+header .wrapper{
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    top: -3.1rem;
+    padding-left: 5rem;
+}
+
+header .wrapper div{
+
+    color: rgb(241, 241, 241);
+    width: 60%;
+}
+
+header .wrapper div h1{
+    font-size: 3rem;
+    margin-bottom: -5px;
+}
+
+header .wrapper div span{
+    font-size: 29px;
+}
+
+header .wrapper div p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+header img{
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: -7rem;
+}
+
+/* Body */
+
+.body{
+    color: rgb(51, 51, 51);;
+    position: relative;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about{
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    column-gap: 1rem;
+    margin: 1rem 0 2rem 0;
+    padding: 2rem 4rem;
+}
+
+.about div{
+    margin-right: 1.5rem;
+}
+
+.about .text p{
+    font-size: 16px;
+}
+
+.about .text p b{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.about img{
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.body .wrapper{
+    padding: 2rem 4rem;
+    margin-top: 1rem;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2rem;
+    background-color: white;
+}
+
+.body .wrapper .card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.body .wrapper .card img{
+    height: 100%;
+    object-fit: fill;
+}
+
+.body .wrapper .card .card-body{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    padding: 10px 10px 20px 10px;
+}
+
+footer{
+    margin-top: 2rem;
+    background-color: rgb(255, 217, 223);
+    color: black;
+    padding: 2rem 4rem;
+}
+
+footer .container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+footer div p a{
+    color: rgb(51, 51, 51);
+    text-decoration: underline;
+}
+
+footer .container .grid{
+    display: grid;
+    grid-template-columns: 10% auto;
+    column-gap: 15px;
+}
+
+footer .container .grid div img {
+    border-radius: 50%;
+}
+}
